@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2e10418d-e56e-4944-8c95-8f019ff1c861" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,17 +19,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/sqlite-jdbc-3.36.0.3.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dokumente\TG\TGI-J2\CT-S\GameOfLifeV2\src" />
       <recent name="C:\Users\spira\Documents\GitHub\GameOfLifeV2" />
     </key>
   </component>
@@ -58,11 +67,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632327895078</updated>
-      <workItem from="1632327896661" duration="198000" />
+      <workItem from="1632327896661" duration="377000" />
+      <workItem from="1632393581886" duration="298000" />
+      <workItem from="1632809348387" duration="709000" />
+      <workItem from="1632810087627" duration="3522000" />
+      <workItem from="1632816197736" duration="3395000" />
+      <workItem from="1632819665130" duration="4457000" />
+      <workItem from="1632986993745" duration="717000" />
+      <workItem from="1632998000228" duration="1542000" />
+      <workItem from="1633066849802" duration="4213000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLException" package="java.sql" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.sqlite.SQLiteException" package="org.sqlite" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

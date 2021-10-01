@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sqlite-jdbc-3.36.0.3 (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/lib/sqlite-jdbc-3.36.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -6,30 +6,38 @@ public class DataBase {
     Connection con;
 
     public DataBase() {
+        String sqlCreateTable = "CREATE TABLE IF NOT EXISTS gameOfLife ("
+                + "ID INT AUTO_INCREMENT PRIMARY KEY  ,"
+                + "generationNr INT,"
+                + "generation TEXT)";
         try {
             Class.forName("org.sqlite.JDBC");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-        try {
-            con = DriverManager.getConnection("jdbc:sqlite: gameOfLife.db [;Attribut=Wert]*");
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        String sqlCreateTable = "CREATE TABLE IF NOT EXISTS GAMEOFLIFE ("
-                + "ID INT AUTO_INCREMENT PRIMARY KEY,"
-                + "GENERATION TEXT,"
-                + "INHALT INT);";
-        try {
+            con = DriverManager.getConnection("jdbc:sqlite: gameOfLife.db");
             Statement stmt = con.createStatement();
             stmt.executeUpdate(sqlCreateTable);
-        } catch (SQLException e) {
+            stmt.close();
+        } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
 
 
+    }
 
+    public void saveGeneration(int[][] pGeneration, int pGenerationNr) {
 
+        String insertSQL = "INSERT INTO gameOfLife" +
+                "(generationNr, generation)" +
+                "Values(" + pGenerationNr +",\"" + GenerationSerializer.serialize(pGeneration) + "\"" + ");";
+
+        System.out.println(insertSQL);
+
+        try {
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(insertSQL);
+            stmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
 
