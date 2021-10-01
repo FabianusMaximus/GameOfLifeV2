@@ -6,10 +6,10 @@ public class DataBase {
     Connection con;
 
     public DataBase() {
-        String sqlCreateTable = "CREATE TABLE IF NOT EXISTS gameOfLife ("
-                + "ID AUTO_INCREMENT INT PRIMARY KEY ,"
-                + "generationNr INT,"
-                + "generation TEXT)";
+        String sqlCreateTable = "CREATE TABLE IF NOT EXISTS gameOfLife ( " +
+                "ID INTEGER NOT NULL  PRIMARY KEY AUTOINCREMENT," +
+                "generationNr INT," +
+                "generation TEXT);";
         try {
             Class.forName("org.sqlite.JDBC");
             con = DriverManager.getConnection("jdbc:sqlite: gameOfLife.db");
