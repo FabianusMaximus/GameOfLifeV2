@@ -21,13 +21,17 @@ public class Control {
         generation[2][4] = 1;
     }
 
-    public void start() {
-        Datenbank.saveGeneration(generation,count);
-        TheGUI.showGeneration(count, generation);
-        count++;
-        TheGUI.showGeneration(count, calcNextGeneration());
-        count++;
-        TheGUI.showGeneration(count, calcNextGeneration());
+    public void start(int anzDurchläufe) {
+        Datenbank.loescheLetzterDruchgang();
+        TheGUI.showGeneration(generation);
+        for (int i = 0; i < anzDurchläufe; i++) {
+            count++;
+            TheGUI.showGeneration(calcNextGeneration());
+        }
+        System.out.println("Aus der datenbank gelutschte Schoiße");
+        TheGUI.showGeneration(Datenbank.readGeneration(1));
+        Datenbank.readGeneration(1);
+
         Datenbank.closeConnection();
     }
 
@@ -72,7 +76,7 @@ public class Control {
                 }
             }
         }
-        Datenbank.saveGeneration(generation,count);
+        Datenbank.saveGeneration(generation, count);
         generation = holdGeneration;
         return holdGeneration;
     }

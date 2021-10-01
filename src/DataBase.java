@@ -7,7 +7,7 @@ public class DataBase {
 
     public DataBase() {
         String sqlCreateTable = "CREATE TABLE IF NOT EXISTS gameOfLife ("
-                + "ID INT AUTO_INCREMENT PRIMARY KEY  ,"
+                + "ID AUTO_INCREMENT INT PRIMARY KEY ,"
                 + "generationNr INT,"
                 + "generation TEXT)";
         try {
@@ -23,7 +23,7 @@ public class DataBase {
 
     }
 
-    public void closeConnection(){
+    public void closeConnection() {
         try {
             con.close();
         } catch (SQLException e) {
@@ -35,14 +35,39 @@ public class DataBase {
 
         String insertSQL = "INSERT INTO gameOfLife" +
                 "(generationNr, generation)" +
-                "Values(" + pGenerationNr +",\"" + GenerationSerializer.serialize(pGeneration) + "\"" + ");";
+                "Values(" + pGenerationNr + ",\"" + GenerationSerializer.serialize(pGeneration) + "\"" + ");";
 
-        System.out.println(insertSQL);
 
         try {
             Statement stmt = con.createStatement();
             stmt.executeUpdate(insertSQL);
             stmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public int[][] readGeneration(int pGenerationNr) {
+        String sqlQuery = "SELECT * FROM gameOfLife WHERE generationnr = " + pGenerationNr;
+        int[][] holdGeneration = new int[6][6];
+        try {
+            Statement stmt = con.createStatement();
+            ResultSet table = stmt.executeQuery(sqlQuery);
+            ResultSetMetaData metaData = table.getMetaData();
+            holdGeneration = GenerationSerializer.deserialize(table.getString(3));
+            stmt.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return holdGeneration;
+    }
+
+    public void loescheLetzterDruchgang() {
+        String sqlDelete = "DELETE FROM gameOfLife";
+        try {
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(sqlDelete);
         } catch (SQLException e) {
             e.printStackTrace();
         }
