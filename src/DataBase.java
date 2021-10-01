@@ -23,6 +23,14 @@ public class DataBase {
 
     }
 
+    public void closeConnection(){
+        try {
+            con.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void saveGeneration(int[][] pGeneration, int pGenerationNr) {
 
         String insertSQL = "INSERT INTO gameOfLife" +

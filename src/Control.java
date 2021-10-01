@@ -2,7 +2,7 @@ package Version_2.src;
 
 public class Control {
     GUI TheGUI = new GUI();
-    DataBase datenbank = new DataBase();
+    DataBase Datenbank = new DataBase();
     int generation[][] = new int[6][6];
     int count = 0;
 
@@ -22,11 +22,13 @@ public class Control {
     }
 
     public void start() {
+        Datenbank.saveGeneration(generation,count);
         TheGUI.showGeneration(count, generation);
         count++;
         TheGUI.showGeneration(count, calcNextGeneration());
         count++;
         TheGUI.showGeneration(count, calcNextGeneration());
+        Datenbank.closeConnection();
     }
 
     private int countNeighboursAlive(int pX, int pY) {
@@ -70,7 +72,7 @@ public class Control {
                 }
             }
         }
-        datenbank.saveGeneration(generation,count);
+        Datenbank.saveGeneration(generation,count);
         generation = holdGeneration;
         return holdGeneration;
     }

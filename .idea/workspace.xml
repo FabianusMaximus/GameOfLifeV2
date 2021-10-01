@@ -76,11 +76,23 @@
       <workItem from="1632986993745" duration="717000" />
       <workItem from="1632998000228" duration="1542000" />
       <workItem from="1633066849802" duration="4213000" />
+      <workItem from="1633099699292" duration="395000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
