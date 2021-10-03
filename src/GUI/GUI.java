@@ -1,4 +1,4 @@
-package Version_2.src;
+package Version_2.src.GUI;
 
 public class GUI {
 

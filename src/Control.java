@@ -1,10 +1,13 @@
 package Version_2.src;
 
+import Version_2.src.GUI.GUI;
+
 public class Control {
     GUI TheGUI = new GUI();
     DataBase Datenbank = new DataBase();
     int generation[][] = new int[6][6];
     int count = 0;
+    int nrOfCycles;
 
     public Control() {
         for (int j = 0; j < generation.length; j++) {
@@ -21,19 +24,26 @@ public class Control {
         generation[2][4] = 1;
     }
 
-    public void start(int anzDurchläufe) {
-        Datenbank.loescheLetzterDruchgang();
-        TheGUI.showGeneration(generation);
-        for (int i = 0; i < anzDurchläufe; i++) {
-            count++;
-            TheGUI.showGeneration(calcNextGeneration());
-        }
-        System.out.println("Aus der datenbank gelutschte Schoiße");
-        TheGUI.showGeneration(Datenbank.readGeneration(1));
-        Datenbank.readGeneration(1);
+    public void setGeneration(int[][] pGeneration){
 
-        Datenbank.closeConnection();
     }
+
+    public int[][] getGeneration(){
+        return null;
+    }
+
+    public void initGeneration(int pWidth, int pHeight){
+
+    }
+
+    public void createRandomGen(){
+
+    }
+
+    private void showGeneration(){
+
+    }
+
 
     private int countNeighboursAlive(int pX, int pY) {
         int anzAlive = 0;
@@ -79,5 +89,31 @@ public class Control {
         Datenbank.saveGeneration(generation, count);
         generation = holdGeneration;
         return holdGeneration;
+    }
+
+    private void calcGenerationsAhead(int pNrOfCycles){
+
+    }
+
+    public void setNrOfCycles(int pNrOfCycles){
+
+    }
+
+    public void startUserInputGenerationGUI(int pWidth, int pHeight){
+        
+    }
+
+    public void start(int anzDurchläufe) {
+        Datenbank.loescheLetzterDruchgang();
+        TheGUI.showGeneration(generation);
+        for (int i = 0; i < anzDurchläufe; i++) {
+            count++;
+            TheGUI.showGeneration(calcNextGeneration());
+        }
+        System.out.println("Aus der datenbank gelutschte Schoiße");
+        TheGUI.showGeneration(Datenbank.readGeneration(1));
+        Datenbank.readGeneration(1);
+
+        Datenbank.closeConnection();
     }
 }
