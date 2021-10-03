@@ -1,46 +1,46 @@
 package Version_2.src;
 
+import Version_2.src.Datenbank.DataBase;
 import Version_2.src.GUI.GUI;
+import Version_2.src.GUI.GUIStart;
 
 public class Control {
     GUI TheGUI = new GUI();
     DataBase Datenbank = new DataBase();
-    int generation[][] = new int[6][6];
+    int generation[][];
     int count = 0;
     int nrOfCycles;
 
     public Control() {
-        for (int j = 0; j < generation.length; j++) {
-            for (int i = 0; i < generation[j].length; i++) {
-                generation[j][i] = 0;
+        GUIStart guiStart = new GUIStart(this);
+    }
+
+    public void setGeneration(int[][] pGeneration) {
+        generation = pGeneration;
+    }
+
+    public int[][] getGeneration() {
+        return generation;
+    }
+
+    public void initGeneration(int pWidth, int pHeight) {
+        generation = new int[pWidth][pHeight];
+    }
+
+    public void createRandomGen() {
+        for (int x = 0; x < generation.length; x++) {
+            for (int y = 0; y < generation[x].length; y++) {
+                int random = (int) (Math.random() * 2);
+                if (random == 1) {
+                    generation[x][y] = 1;
+                } else {
+                    generation[x][y] = 0;
+                }
             }
         }
-
-        generation[1][2] = 1;
-        generation[3][1] = 1;
-        generation[2][2] = 1;
-        generation[3][3] = 1;
-        generation[4][3] = 1;
-        generation[2][4] = 1;
     }
 
-    public void setGeneration(int[][] pGeneration){
-
-    }
-
-    public int[][] getGeneration(){
-        return null;
-    }
-
-    public void initGeneration(int pWidth, int pHeight){
-
-    }
-
-    public void createRandomGen(){
-
-    }
-
-    private void showGeneration(){
+    private void showGeneration() {
 
     }
 
@@ -54,7 +54,7 @@ public class Control {
         }
         while (y < pY + 2) {
             for (int i = 0; i < 3; i++) {
-                if (x > 0 && y > 0 && x < 5 && y < 5 && generation[x][y] == 1) {
+                if (x > 0 && y > 0 && x < generation.length- 1 && y < generation[1].length-1 && generation[x][y] == 1) {
                     anzAlive++;
                 }
                 x++;
@@ -66,7 +66,7 @@ public class Control {
     }
 
     public int[][] calcNextGeneration() {
-        int holdGeneration[][] = new int[6][6];
+        int holdGeneration[][] = new int[generation.length][generation[0].length];
         for (int i = 0; i < holdGeneration.length; i++) {
             for (int j = 0; j < holdGeneration[i].length; j++) {
                 holdGeneration[i][j] = 0;
@@ -91,29 +91,26 @@ public class Control {
         return holdGeneration;
     }
 
-    private void calcGenerationsAhead(int pNrOfCycles){
-
-    }
-
-    public void setNrOfCycles(int pNrOfCycles){
-
-    }
-
-    public void startUserInputGenerationGUI(int pWidth, int pHeight){
-        
-    }
-
-    public void start(int anzDurchläufe) {
-        Datenbank.loescheLetzterDruchgang();
-        TheGUI.showGeneration(generation);
-        for (int i = 0; i < anzDurchläufe; i++) {
-            count++;
-            TheGUI.showGeneration(calcNextGeneration());
+    private void calcGenerationsAhead(int pNrOfCycles) {
+        for (int i = 0; i <pNrOfCycles ; i++) {
+            calcNextGeneration();
         }
-        System.out.println("Aus der datenbank gelutschte Schoiße");
-        TheGUI.showGeneration(Datenbank.readGeneration(1));
-        Datenbank.readGeneration(1);
+    }
 
+    public void setNrOfCycles(int pNrOfCycles) {
+        nrOfCycles = pNrOfCycles;
+    }
+
+    public void startUserInputGenerationGUI(int pWidth, int pHeight) {
+
+    }
+
+    public void start() {
+        initGeneration(20, 20);
+        Datenbank.loescheLetzterDruchgang();
+        createRandomGen();
+        TheGUI.showGeneration(generation);
+        TheGUI.showGeneration(calcNextGeneration());
         Datenbank.closeConnection();
     }
 }
