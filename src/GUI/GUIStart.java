@@ -18,6 +18,7 @@ public class GUIStart extends JFrame implements ActionListener {
     private JCheckBoxMenuItem cbmiEinzeln;
     private JCheckBoxMenuItem cbmiMehrere;
     private JTextField tfAnzGeneration;
+    private JLabel lbGeneration;
 
     public GUIStart(Control pControll){
         setTitle("Conway's Game of Life");
@@ -43,7 +44,29 @@ public class GUIStart extends JFrame implements ActionListener {
         tfHoehe.setBounds(330,30,50,20);
         cp.add(tfHoehe);
 
-        //TODO hier fehlt noch was
+        cbmiEinzeln = new JCheckBoxMenuItem("Einzelberechnung der Generationen");
+        cbmiEinzeln.setBounds(20,70,300,20);
+        cp.add(cbmiEinzeln);
+
+        cbmiMehrere = new JCheckBoxMenuItem("Berechnung mehrerer Generationen");
+        cbmiMehrere.setBounds(20,100,300,20);
+        cp.add(cbmiMehrere);
+
+        tfAnzGeneration = new JTextField("");
+        tfAnzGeneration.setBounds(20,130,40,20);
+        cp.add(tfAnzGeneration);
+
+        lbGeneration = new JLabel(".ten Generation");
+        lbGeneration.setBounds(65,130,100,20);
+        cp.add(lbGeneration);
+
+        btnRandomStatGen = new JButton("Zufällige Startgeneration");
+        btnRandomStatGen.setBounds(20,160,300,20);
+        cp.add(btnRandomStatGen);
+
+        btnUserInputGen = new JButton("Zur Eingabe der Startgeneration");
+        btnUserInputGen.setBounds(20,185,300,20);
+        cp.add(btnUserInputGen);
         
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(new Dimension(400, 250));
