@@ -40,6 +40,7 @@ public class GUIGeneration extends JFrame implements ActionListener {
         btnNextGen = new JButton("Next Generation");
         btnNextGen.addActionListener(this);
         cp.add(btnNextGen, BorderLayout.SOUTH);
+
         setSize(new Dimension(width *30,height *30+30));
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);

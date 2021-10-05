@@ -69,6 +69,7 @@ public class GUIStart extends JFrame implements ActionListener {
 
         btnUserInputGen = new JButton("Zur Eingabe der Startgeneration");
         btnUserInputGen.setBounds(20, 185, 300, 20);
+        btnUserInputGen.addActionListener(this);
         cp.add(btnUserInputGen);
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -80,17 +81,25 @@ public class GUIStart extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == btnRandomStatGen) {
-            if (!tfBreite.getText().equals("") && !tfHoehe.getText().equals("")) {
+            if (!tfBreite.getText().equals("") && !tfHoehe.getText().equals("") &&
+                    Integer.parseInt(tfBreite.getText()) != 0 && Integer.parseInt(tfHoehe.getText()) != 0) {
                 control.initGeneration(Integer.parseInt(tfBreite.getText()), Integer.parseInt(tfHoehe.getText()));
                 control.createRandomGen();
                 control.start();
-            }else{
-                System.out.println("Bitte geben sie zuerst eine Zahl ein");
+                dispose();
+            } else {
+                System.out.println("Bitte geben sie zuerst eine Zahl ein, die größer als 0 ist");
             }
 
 
         } else if (e.getSource() == btnUserInputGen) {
-
+            if (!tfBreite.getText().equals("") && !tfHoehe.getText().equals("") &&
+                    Integer.parseInt(tfBreite.getText()) != 0 && Integer.parseInt(tfHoehe.getText()) != 0) {
+                control.startUserInputGenerationGUI(Integer.parseInt(tfBreite.getText()),
+                        Integer.parseInt(tfHoehe.getText()));
+            } else {
+                System.out.println("Bitte geben sie zuerst eine Zahl ein, die größer als 0 ist");
+            }
         }
     }
 }

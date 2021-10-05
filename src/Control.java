@@ -4,9 +4,11 @@ import Version_2.src.Datenbank.DataBase;
 import Version_2.src.GUI.GUI;
 import Version_2.src.GUI.GUIGeneration;
 import Version_2.src.GUI.GUIStart;
+import Version_2.src.GUI.GUIUserInputGeneration;
 
 public class Control {
     GUIGeneration guiGeneration;
+    GUIUserInputGeneration inputGeneration;
     DataBase Datenbank = new DataBase();
     int generation[][];
     int count = 0;
@@ -110,11 +112,12 @@ public class Control {
     }
 
     public void startUserInputGenerationGUI(int pWidth, int pHeight) {
-
+        if (inputGeneration == null) {
+            inputGeneration = new GUIUserInputGeneration(this, pWidth,pHeight);
+        }
     }
 
     public void start() {
-        calcNextGeneration();
         showGeneration();
     }
 }
