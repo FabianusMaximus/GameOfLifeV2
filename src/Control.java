@@ -1,7 +1,6 @@
 package Version_2.src;
 
 import Version_2.src.Datenbank.DataBase;
-import Version_2.src.GUI.GUI;
 import Version_2.src.GUI.GUIGeneration;
 import Version_2.src.GUI.GUIStart;
 import Version_2.src.GUI.GUIUserInputGeneration;
@@ -9,7 +8,7 @@ import Version_2.src.GUI.GUIUserInputGeneration;
 public class Control {
     GUIGeneration guiGeneration;
     GUIUserInputGeneration inputGeneration;
-    DataBase Datenbank = new DataBase();
+    DataBase datenbank = new DataBase();
     int generation[][];
     int count = 0;
     int nrOfCycles;
@@ -54,7 +53,6 @@ public class Control {
 
     }
 
-
     private int countNeighboursAlive(int pX, int pY) {
         int anzAlive = 0;
         int x = pX - 1;
@@ -96,12 +94,12 @@ public class Control {
                 }
             }
         }
-        Datenbank.saveGeneration(generation, count);
+        datenbank.saveGeneration(generation, count);
         generation = holdGeneration;
         return holdGeneration;
     }
 
-    private void calcGenerationsAhead(int pNrOfCycles) {
+    private void calcGenerationsAhead(int pNrOfCycles) { //TODO nachfragen ob das so gemeint war
         for (int i = 0; i < pNrOfCycles; i++) {
             calcNextGeneration();
         }
@@ -118,6 +116,7 @@ public class Control {
     }
 
     public void start() {
+        datenbank.loescheLetzterDruchgang();
         showGeneration();
     }
 }

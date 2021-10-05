@@ -43,7 +43,7 @@ public class GUIUserInputGeneration extends JFrame implements ActionListener {
         btnSaveGen.addActionListener(this);
         cp.add(btnSaveGen, BorderLayout.SOUTH);
 
-        setSize(new Dimension(pWidth * 30 + 50, pHeight * 30 + 30));
+        setSize(new Dimension(pWidth * 20, pHeight * 20));
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
         setVisible(true);
@@ -52,9 +52,9 @@ public class GUIUserInputGeneration extends JFrame implements ActionListener {
     private void saveGeneration() {
         for (int i = 0; i < groeßeX; i++) {
             for (int j = 0; j < groeßeY; j++) {
-                if (cbCell[i][j].isSelected()){
+                if (cbCell[i][j].isSelected()) {
                     eingabeGeneration[i][j] = 1;
-                }else{
+                } else {
                     eingabeGeneration[i][j] = 0;
                 }
             }

@@ -48,14 +48,18 @@ public class GUIStart extends JFrame implements ActionListener {
 
         cbmiEinzeln = new JCheckBoxMenuItem("Einzelberechnung der Generationen");
         cbmiEinzeln.setBounds(20, 70, 300, 20);
+        cbmiEinzeln.setSelected(true);
+        cbmiEinzeln.addActionListener(this);
         cp.add(cbmiEinzeln);
 
         cbmiMehrere = new JCheckBoxMenuItem("Berechnung mehrerer Generationen");
         cbmiMehrere.setBounds(20, 100, 300, 20);
+        cbmiMehrere.addActionListener(this);
         cp.add(cbmiMehrere);
 
         tfAnzGeneration = new JTextField("");
         tfAnzGeneration.setBounds(20, 130, 40, 20);
+        tfAnzGeneration.setEnabled(false);
         cp.add(tfAnzGeneration);
 
         lbGeneration = new JLabel(".ten Generation");
@@ -81,9 +85,17 @@ public class GUIStart extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == btnRandomStatGen) {
-            if (!tfBreite.getText().equals("") && !tfHoehe.getText().equals("") &&
-                    Integer.parseInt(tfBreite.getText()) != 0 && Integer.parseInt(tfHoehe.getText()) != 0) {
-                control.initGeneration(Integer.parseInt(tfBreite.getText()), Integer.parseInt(tfHoehe.getText()));
+            int breite;
+            int hoehe;
+            if (!tfBreite.getText().equals("") && !tfHoehe.getText().equals("")) {
+                breite = Integer.parseInt(tfBreite.getText());
+                hoehe = Integer.parseInt(tfHoehe.getText());
+            } else {
+                breite = 0;
+                hoehe = 0;
+            }
+            if (breite != 0 && hoehe != 0) {
+                control.initGeneration(breite, hoehe);
                 control.createRandomGen();
                 control.start();
                 dispose();
@@ -93,13 +105,33 @@ public class GUIStart extends JFrame implements ActionListener {
 
 
         } else if (e.getSource() == btnUserInputGen) {
-            if (!tfBreite.getText().equals("") && !tfHoehe.getText().equals("") &&
-                    Integer.parseInt(tfBreite.getText()) != 0 && Integer.parseInt(tfHoehe.getText()) != 0) {
-                control.startUserInputGenerationGUI(Integer.parseInt(tfBreite.getText()),
-                        Integer.parseInt(tfHoehe.getText()));
+            int breite;
+            int hoehe;
+            if (!tfBreite.getText().equals("") && !tfHoehe.getText().equals("")) {
+                breite = Integer.parseInt(tfBreite.getText());
+                hoehe = Integer.parseInt(tfHoehe.getText());
+            } else {
+                breite = 0;
+                hoehe = 0;
+            }
+            if (breite != 0 && hoehe != 0) {
+                if (cbmiEinzeln.isSelected()){
+                    control.startUserInputGenerationGUI(breite, hoehe);
+                }else{
+                    control.setNrOfCycles(Integer.parseInt(tfAnzGeneration.getText()));
+                    control.startUserInputGenerationGUI(breite, hoehe);
+                }
+
             } else {
                 System.out.println("Bitte geben sie zuerst eine Zahl ein, die größer als 0 ist");
             }
+        } else if (e.getSource() == cbmiEinzeln) {
+            cbmiMehrere.setSelected(false);
+            tfAnzGeneration.setEnabled(false);
+            tfAnzGeneration.setText("");
+        } else if (e.getSource() == cbmiMehrere) {
+            cbmiEinzeln.setSelected(false);
+            tfAnzGeneration.setEnabled(true);
         }
     }
 }
