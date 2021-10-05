@@ -2,10 +2,11 @@ package Version_2.src;
 
 import Version_2.src.Datenbank.DataBase;
 import Version_2.src.GUI.GUI;
+import Version_2.src.GUI.GUIGeneration;
 import Version_2.src.GUI.GUIStart;
 
 public class Control {
-    GUI TheGUI = new GUI();
+    GUIGeneration guiGeneration;
     DataBase Datenbank = new DataBase();
     int generation[][];
     int count = 0;
@@ -41,6 +42,13 @@ public class Control {
     }
 
     private void showGeneration() {
+        if (guiGeneration == null) {
+            guiGeneration = new GUIGeneration(this, generation);
+            guiGeneration.showGeneration(generation);
+        }else{
+            guiGeneration.showGeneration(generation);
+        }
+
 
     }
 
@@ -54,7 +62,7 @@ public class Control {
         }
         while (y < pY + 2) {
             for (int i = 0; i < 3; i++) {
-                if (x > 0 && y > 0 && x < generation.length- 1 && y < generation[1].length-1 && generation[x][y] == 1) {
+                if (x > 0 && y > 0 && x < generation.length - 1 && y < generation[1].length - 1 && generation[x][y] == 1) {
                     anzAlive++;
                 }
                 x++;
@@ -92,7 +100,7 @@ public class Control {
     }
 
     private void calcGenerationsAhead(int pNrOfCycles) {
-        for (int i = 0; i <pNrOfCycles ; i++) {
+        for (int i = 0; i < pNrOfCycles; i++) {
             calcNextGeneration();
         }
     }
@@ -106,11 +114,7 @@ public class Control {
     }
 
     public void start() {
-        initGeneration(20, 20);
-        Datenbank.loescheLetzterDruchgang();
-        createRandomGen();
-        TheGUI.showGeneration(generation);
-        TheGUI.showGeneration(calcNextGeneration());
-        Datenbank.closeConnection();
+        calcNextGeneration();
+        showGeneration();
     }
 }
