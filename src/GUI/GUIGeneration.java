@@ -6,6 +6,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class GUIGeneration extends JFrame implements ActionListener {
     private JPanel panGen;
@@ -14,6 +16,16 @@ public class GUIGeneration extends JFrame implements ActionListener {
     private Control control;
 
     public GUIGeneration(Control pControl, int[][] pGen) {
+        /*
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosed(WindowEvent e) {
+                super.windowClosed(e);
+                control.start();
+                dispose();
+            }
+        });
+         */
         control = pControl;
         int width = pGen.length;
         int height = pGen[0].length;

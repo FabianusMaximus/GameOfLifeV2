@@ -60,8 +60,9 @@ public class GUIUserInputGeneration extends JFrame implements ActionListener {
             }
         }
         control.setGeneration(eingabeGeneration);
+        control.start(control.isSelected());
         dispose();
-        control.start();
+
     }
 
     @Override

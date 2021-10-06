@@ -5,35 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e10418d-e56e-4944-8c95-8f019ff1c861" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ gameOfLife.db" beforeDir="false" afterPath="$PROJECT_DIR$/ gameOfLife.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0eed766b-991c-483c-8291-1d3c0bcf6a23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0eed766b-991c-483c-8291-1d3c0bcf6a23/entities/entities.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0eed766b-991c-483c-8291-1d3c0bcf6a23/entities/entities.dat.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0eed766b-991c-483c-8291-1d3c0bcf6a23/entities/entities.dat.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0eed766b-991c-483c-8291-1d3c0bcf6a23/entities/entities.dat_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0eed766b-991c-483c-8291-1d3c0bcf6a23/entities/entities.dat_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/19da0945-1898-4791-9d2f-2f4901afefe4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/19da0945-1898-4791-9d2f-2f4901afefe4/entities/entities.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/19da0945-1898-4791-9d2f-2f4901afefe4/entities/entities.dat.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/19da0945-1898-4791-9d2f-2f4901afefe4/entities/entities.dat.values" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/19da0945-1898-4791-9d2f-2f4901afefe4/entities/entities.dat.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/19da0945-1898-4791-9d2f-2f4901afefe4/entities/entities.dat.values.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/19da0945-1898-4791-9d2f-2f4901afefe4/entities/entities.dat_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/19da0945-1898-4791-9d2f-2f4901afefe4/entities/entities.dat_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/19da0945-1898-4791-9d2f-2f4901afefe4/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4fbce201-26b2-467d-b8d1-5683b8fa6b2d.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4fbce201-26b2-467d-b8d1-5683b8fa6b2d/entities/entities.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4fbce201-26b2-467d-b8d1-5683b8fa6b2d/entities/entities.dat.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4fbce201-26b2-467d-b8d1-5683b8fa6b2d/entities/entities.dat.values" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4fbce201-26b2-467d-b8d1-5683b8fa6b2d/entities/entities.dat.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4fbce201-26b2-467d-b8d1-5683b8fa6b2d/entities/entities.dat.values.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4fbce201-26b2-467d-b8d1-5683b8fa6b2d/entities/entities.dat_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4fbce201-26b2-467d-b8d1-5683b8fa6b2d/entities/entities.dat_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4fbce201-26b2-467d-b8d1-5683b8fa6b2d/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/40ea0645-eea5-42c9-b152-5107aead9060.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/40ea0645-eea5-42c9-b152-5107aead9060.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Control.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/GUIGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/GUIGeneration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/GUIStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/GUIStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/GUIUserInputGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/GUIUserInputGeneration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +101,7 @@
       <workItem from="1633066849802" duration="4213000" />
       <workItem from="1633099699292" duration="5554000" />
       <workItem from="1633277553902" duration="885000" />
+      <workItem from="1633512922451" duration="2944000" />
     </task>
     <servers />
   </component>
@@ -147,6 +131,11 @@
           <properties class="org.sqlite.SQLiteException" package="org.sqlite" />
           <option name="timeStamp" value="2" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GUI/GUIUserInputGeneration.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

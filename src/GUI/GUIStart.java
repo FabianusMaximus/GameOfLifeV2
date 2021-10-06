@@ -96,8 +96,16 @@ public class GUIStart extends JFrame implements ActionListener {
             }
             if (breite != 0 && hoehe != 0) {
                 control.initGeneration(breite, hoehe);
+                int nrCycles;
+                if (!tfAnzGeneration.getText().equals("") && Integer.parseInt(tfAnzGeneration.getText()) != 0) {
+                    nrCycles = Integer.parseInt(tfAnzGeneration.getText());
+                } else {
+                    nrCycles = 0;
+                }
+
+                control.setNrOfCycles(nrCycles);
                 control.createRandomGen();
-                control.start();
+                control.start(cbmiMehrere.isSelected());
                 dispose();
             } else {
                 System.out.println("Bitte geben sie zuerst eine Zahl ein, die größer als 0 ist");
@@ -115,11 +123,12 @@ public class GUIStart extends JFrame implements ActionListener {
                 hoehe = 0;
             }
             if (breite != 0 && hoehe != 0) {
-                if (cbmiEinzeln.isSelected()){
+                if (cbmiEinzeln.isSelected()) {
                     control.startUserInputGenerationGUI(breite, hoehe);
-                }else{
+                } else {
                     control.setNrOfCycles(Integer.parseInt(tfAnzGeneration.getText()));
                     control.startUserInputGenerationGUI(breite, hoehe);
+                    control.setSelected();
                 }
 
             } else {

@@ -4,16 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e10418d-e56e-4944-8c95-8f019ff1c861" name="Changes" comment="" />
+    <list default="true" id="2e10418d-e56e-4944-8c95-8f019ff1c861" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/ gameOfLife.db" beforeDir="false" afterPath="$PROJECT_DIR$/ gameOfLife.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/40ea0645-eea5-42c9-b152-5107aead9060.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/40ea0645-eea5-42c9-b152-5107aead9060.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Control.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/GUIGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/GUIGeneration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/GUIStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/GUIStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/GUIUserInputGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/GUIUserInputGeneration.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1yVDWhnsfygwwE908vXoyLaJEOU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,7 +52,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -45,7 +66,7 @@
       <module name="GameOfLifeV2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Version_2.src.*" />
+          <option name="PATTERN" value="Version_2.src.GUI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,11 +97,26 @@
       <workItem from="1632986993745" duration="717000" />
       <workItem from="1632998000228" duration="1542000" />
       <workItem from="1633066849802" duration="4213000" />
+      <workItem from="1633099699292" duration="5554000" />
+      <workItem from="1633277553902" duration="885000" />
+      <workItem from="1633512922451" duration="1256000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

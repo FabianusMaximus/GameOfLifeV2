@@ -13,6 +13,8 @@ public class Control {
     int count = 0;
     int nrOfCycles;
 
+    boolean selected;
+
     public Control() {
         GUIStart guiStart = new GUIStart(this);
     }
@@ -95,11 +97,12 @@ public class Control {
             }
         }
         datenbank.saveGeneration(generation, count);
+        count++;
         generation = holdGeneration;
         return holdGeneration;
     }
 
-    private void calcGenerationsAhead(int pNrOfCycles) { //TODO nachfragen ob das so gemeint war
+    private void calcGenerationsAhead(int pNrOfCycles) {
         for (int i = 0; i < pNrOfCycles; i++) {
             calcNextGeneration();
         }
@@ -115,8 +118,21 @@ public class Control {
         }
     }
 
-    public void start() {
+    public void setSelected(){
+        selected = true;
+    }
+
+    public boolean isSelected(){
+        return selected;
+    }
+
+    public void start(boolean isSelected) {
         datenbank.loescheLetzterDruchgang();
+        selected = isSelected;
+        if (isSelected){
+
+            calcGenerationsAhead(nrOfCycles);
+        }
         showGeneration();
     }
 }
