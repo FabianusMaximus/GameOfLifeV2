@@ -48,7 +48,7 @@ public class Control {
         if (guiGeneration == null) {
             guiGeneration = new GUIGeneration(this, generation);
             guiGeneration.showGeneration(generation);
-        }else{
+        } else {
             guiGeneration.showGeneration(generation);
         }
 
@@ -64,7 +64,7 @@ public class Control {
         }
         while (y < pY + 2) {
             for (int i = 0; i < 3; i++) {
-                if (x > 0 && y > 0 && x < generation.length - 1 && y < generation[1].length - 1 && generation[x][y] == 1) {
+                if (x >= 0 && y >= 0 && x <= generation.length - 1 && y <= generation[1].length - 1 && generation[x][y] == 1) {
                     anzAlive++;
                 }
                 x++;
@@ -114,22 +114,22 @@ public class Control {
 
     public void startUserInputGenerationGUI(int pWidth, int pHeight) {
         if (inputGeneration == null) {
-            inputGeneration = new GUIUserInputGeneration(this, pWidth,pHeight);
+            inputGeneration = new GUIUserInputGeneration(this, pWidth, pHeight);
         }
     }
 
-    public void setSelected(){
+    public void setSelected() {
         selected = true;
     }
 
-    public boolean isSelected(){
+    public boolean isSelected() {
         return selected;
     }
 
     public void start(boolean isSelected) {
         datenbank.loescheLetzterDruchgang();
         selected = isSelected;
-        if (isSelected){
+        if (isSelected) {
 
             calcGenerationsAhead(nrOfCycles);
         }

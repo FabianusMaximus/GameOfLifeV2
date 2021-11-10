@@ -6,17 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="2e10418d-e56e-4944-8c95-8f019ff1c861" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/ gameOfLife.db" beforeDir="false" afterPath="$PROJECT_DIR$/ gameOfLife.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/40ea0645-eea5-42c9-b152-5107aead9060.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/40ea0645-eea5-42c9-b152-5107aead9060.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Control.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/GUIGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/GUIGeneration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/GUIStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/GUIStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/GUIUserInputGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/GUIUserInputGeneration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Durak" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -101,7 +97,12 @@
       <workItem from="1633066849802" duration="4213000" />
       <workItem from="1633099699292" duration="5554000" />
       <workItem from="1633277553902" duration="885000" />
-      <workItem from="1633512922451" duration="2944000" />
+      <workItem from="1633512922451" duration="3845000" />
+      <workItem from="1633689240435" duration="37000" />
+      <workItem from="1633806192631" duration="325000" />
+      <workItem from="1634024755086" duration="1467000" />
+      <workItem from="1634027093565" duration="40000" />
+      <workItem from="1634027229708" duration="241000" />
     </task>
     <servers />
   </component>
@@ -131,11 +132,6 @@
           <properties class="org.sqlite.SQLiteException" package="org.sqlite" />
           <option name="timeStamp" value="2" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/GUI/GUIUserInputGeneration.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

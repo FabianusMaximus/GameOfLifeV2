@@ -34,7 +34,7 @@ public class GUIStart extends JFrame implements ActionListener {
         lbBreite.setBounds(170, 30, 50, 20);
         cp.add(lbBreite);
 
-        tfBreite = new JTextField(null);
+        tfBreite = new JTextField("20");
         tfBreite.setBounds(215, 30, 50, 20);
         cp.add(tfBreite);
 
@@ -42,7 +42,7 @@ public class GUIStart extends JFrame implements ActionListener {
         lbHoehe.setBounds(280, 30, 50, 20);
         cp.add(lbHoehe);
 
-        tfHoehe = new JTextField(null);
+        tfHoehe = new JTextField("20");
         tfHoehe.setBounds(330, 30, 50, 20);
         cp.add(tfHoehe);
 
