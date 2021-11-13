@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e10418d-e56e-4944-8c95-8f019ff1c861" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/ gameOfLife.db" beforeDir="false" afterPath="$PROJECT_DIR$/ gameOfLife.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/GUIGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/GUIGeneration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/GUIStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/GUIStart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

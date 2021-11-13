@@ -13,13 +13,6 @@ public class GUIGeneration extends JFrame implements ActionListener {
     private Control control;
 
     public GUIGeneration(Control pControl, int[][] pGen) {
-        addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosed(WindowEvent e) {
-                control.start(false);
-                dispose();
-            }
-        });
         control = pControl;
         int width = pGen.length;
         int height = pGen[0].length;
