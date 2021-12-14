@@ -3,7 +3,7 @@ package Version_2.src.Datenbank;
 import java.sql.*;
 
 public class DataBase {
-    Connection con;
+    private Connection con;
 
     public DataBase() {
         String sqlCreateTable = "CREATE TABLE IF NOT EXISTS gameOfLife ( " +
