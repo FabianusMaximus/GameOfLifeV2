@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e10418d-e56e-4944-8c95-8f019ff1c861" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/ gameOfLife.db" beforeDir="false" afterPath="$PROJECT_DIR$/ gameOfLife.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/40ea0645-eea5-42c9-b152-5107aead9060.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/GUIGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/GUIGeneration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/ gameOfLife.db" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLifeV2/Version_2/ gameOfLife.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +25,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1yVDWhnsfygwwE908vXoyLaJEOU" />
   <component name="ProjectLevelVcsManager">
@@ -97,6 +103,9 @@
       <workItem from="1634024755086" duration="1467000" />
       <workItem from="1634027093565" duration="40000" />
       <workItem from="1634027229708" duration="241000" />
+      <workItem from="1639472376874" duration="235000" />
+      <workItem from="1639650103610" duration="1238000" />
+      <workItem from="1641892760418" duration="2324000" />
     </task>
     <servers />
   </component>
@@ -113,7 +122,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
